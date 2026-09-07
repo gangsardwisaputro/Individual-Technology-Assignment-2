@@ -174,10 +174,10 @@ var config = {
             callback: '',
             onChapterEnter: [
                 { layer: 'subzone-elderly-clean', opacity: 0.0 },
-                { layer: 'MRT', opacity: 0.9 },
-                { layer: 'Clinic', opacity: 0.9 },
-                { layer: 'Hawker', opacity: 0.9 },
-                { layer: 'Amenity', opacity: 0.3 },
+                { layer: 'MRT', opacity: 1 },
+                { layer: 'Clinic', opacity: 1 },
+                { layer: 'Hawker', opacity: 1},
+                { layer: 'Amenity', opacity: 0.5 },
                 { layer: 'Gap', opacity: 0.7 }
             ],
             onChapterExit: [
