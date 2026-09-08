@@ -85,7 +85,7 @@ var config = {
                 { layer: 'Gap', opacity: 0 }
             ],
             onChapterExit: [
-                { layer: 'subzone-elderly-clean', opacity: 0.85 },
+                { layer: 'subzone-elderly-clean', opacity: 0.6 },
                 { layer: 'MRT', opacity: 0 },
                 { layer: 'Clinic', opacity: 0 },
                 { layer: 'Hawker', opacity: 0 },
@@ -118,10 +118,10 @@ var config = {
             ],
             onChapterExit: [
                 { layer: 'subzone-elderly-clean', opacity: 0.6 },
-                { layer: 'MRT', opacity: 1 },
-                { layer: 'Clinic', opacity: 1 },
-                { layer: 'Hawker', opacity: 1 },
-                { layer: 'Amenity', opacity: 0.6 },
+                { layer: 'MRT', opacity: 0.8 },
+                { layer: 'Clinic', opacity: 0.8 },
+                { layer: 'Hawker', opacity: 0.8 },
+                { layer: 'Amenity', opacity: 0.4 },
                 { layer: 'Gap', opacity: 0 }
             ]
         },
@@ -153,8 +153,8 @@ var config = {
                 { layer: 'MRT', opacity: 0.0 },
                 { layer: 'Clinic', opacity: 0.0 },
                 { layer: 'Hawker', opacity: 0.0 },
-                { layer: 'Amenity', opacity: 0.6 },
-                { layer: 'Gap', opacity: 0.8 }
+                { layer: 'Amenity', opacity: 0.4 },
+                { layer: 'Gap', opacity: 0.6 }
             ]
         },
         {
@@ -176,17 +176,17 @@ var config = {
                 { layer: 'subzone-elderly-clean', opacity: 0.0 },
                 { layer: 'MRT', opacity: 1 },
                 { layer: 'Clinic', opacity: 1 },
-                { layer: 'Hawker', opacity: 1 },
-                { layer: 'Amenity', opacity: 0.3 },
+                { layer: 'Hawker', opacity: 1},
+                { layer: 'Amenity', opacity: 0.5 },
                 { layer: 'Gap', opacity: 0.7 }
             ],
             onChapterExit: [
                 { layer: 'subzone-elderly-clean', opacity: 0.0 },
-                { layer: 'MRT', opacity: 1 },
-                { layer: 'Clinic', opacity: 1 },
-                { layer: 'Hawker', opacity: 1 },
-                { layer: 'Amenity', opacity: 0.3 },
-                { layer: 'Gap', opacity: 0.7 }
+                { layer: 'MRT', opacity: 0.4 },
+                { layer: 'Clinic', opacity: 0.4 },
+                { layer: 'Hawker', opacity: 0.4 },
+                { layer: 'Amenity', opacity: 0.2 },
+                { layer: 'Gap', opacity: 0.4 }
             ]
         },
         {
@@ -214,12 +214,13 @@ var config = {
             ],
             onChapterExit: [
                 { layer: 'subzone-elderly-clean', opacity: 0.0 },
-                { layer: 'MRT', opacity: 0.4 },
-                { layer: 'Clinic', opacity: 0.4 },
-                { layer: 'Hawker', opacity: 0.4 },
-                { layer: 'Amenity', opacity: 0.4 },
+                { layer: 'MRT', opacity: 0.2 },
+                { layer: 'Clinic', opacity: 0.2 },
+                { layer: 'Hawker', opacity: 0.2 },
+                { layer: 'Amenity', opacity: 0.2 },
                 { layer: 'Gap', opacity: 0.0 }
             ]
         }
     ]
 };
+ 
