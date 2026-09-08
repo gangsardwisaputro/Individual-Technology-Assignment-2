@@ -264,16 +264,23 @@
                 response.element.classList.add('active');
                 map[chapter.mapAnimation || 'flyTo'](chapter.location);
                 if (config.showMarkers) marker.setLngLat(chapter.location.center);
-                if (chapter.onChapterEnter.length > 0) chapter.onChapterEnter.forEach(setLayerOpacity);
                 updateLegend(chapter.id);
                 if (chapter.callback) window[chapter.callback]();
-                if (chapter.rotateAnimation) {
-                    map.once('moveend', () => {
-                        const rotateNumber = map.getBearing();
-                        map.rotateTo(rotateNumber + 180, { duration: 30000, easing: t => t });
-                    });
-                }
-            })
+    
+                // Wait for map to finish moving before applying layer opacity
+                map.once('moveend', function() {
+                if (chapter.onChapterEnter.length > 0) {
+                chapter.onChapterEnter.forEach(setLayerOpacity);
+            }
+        });
+    
+    if (chapter.rotateAnimation) {
+        map.once('moveend', () => {
+            const rotateNumber = map.getBearing();
+            map.rotateTo(rotateNumber + 180, { duration: 30000, easing: t => t });
+        });
+    }
+})
             .onStepExit(response => {
                 var chapter = config.chapters.find(chap => chap.id === response.element.id);
                 response.element.classList.remove('active');
